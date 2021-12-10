@@ -1,0 +1,12 @@
+numpy
+matplotlib
+tqdm
+tabulate
+pytorch
+torchvision
+pytest
+pytest-cov
+black
+isort
+mypy
+pylint
