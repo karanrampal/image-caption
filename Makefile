@@ -7,18 +7,18 @@ install: requirements.txt
 	$(VENV)/Scripts/pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov
+	pytest -vv --cov
 
 format:
-	black src
-	isort src
-	mypy src
+	black src tests
+	isort src tests
+	mypy src tests
 
 lint:
-	pylint -j 6 src
+	pylint -j 6 src tests
 
 clean:
-	rm -rf __pycache__ .coverage .mypy_cache *.log
+	rm -rf __pycache__ .coverage .mypy_cache .pytest_cache *.log
 
 all: install lint test
 
