@@ -1,9 +1,12 @@
 numpy
 matplotlib
-tqdm
-tabulate
+
+# Deep learning
 pytorch
 torchvision
+torchtext
+
+# Test, format, lint
 pytest
 pytest-cov
 black
